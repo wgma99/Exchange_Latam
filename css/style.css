@@ -307,11 +307,14 @@ footer .social{
 }
 
 footer .social a, footer .developer a{
-    list-style: none;
     text-decoration: none;
     color: #333333;
     display: flex;
     gap: 5px;
+}
+
+footer ul li{
+    list-style: none;
 }
 
 footer .developer a{
