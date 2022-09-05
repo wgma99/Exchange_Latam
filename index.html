@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Latam</title>
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <section class="title-logo">
+                <img src="https://img.icons8.com/nolan/64/exchange.png" alt="">
+                <h1>Exchange Latam</h1>
+            </section>
+            <div class="container-p">
+                 <p>Somos una plataforma que opera en la mayor parte de América Latina, ofreciendo intercambios entre monedas locales de sus paises, así como también a las Cryptomonedas más populares del mercado.</p>
+                 <img src="./assets/img/map.png" alt="">
+            </div>
+           
+        </div>
+    </header>
+
+    <main>
+        <section class="prices">
+            <a class="buttom-simulator" href="#simulator-section">Simulador <span class="downIcon"></span></a>
+            <div class="prices-container">
+                <div class="prices-title">
+                    <h2>Tasas de Cambio</h2>
+                    <img src="./assets/icons/price.png" alt="">
+                </div>
+           
+                <p>Los precios de compra y venta pueden variar durante el día y son actualizados en tiempo real, basados en casas de cambio oficiales de cada pais.</p>
+
+                <img class="tasas-img" src="./assets/img/tasa-de-interes.png" alt="">
+            </div>
+        </section>
+        <section class="about-us">
+            <h2>Sobre nosotros</h2>
+            <div class="list-container">
+                <ul>
+                    <li><span class="check-icon"></span> Disponible en muchas monedas de latinoamérica.
+                    <p>Resaltamos por operar en la maor parte de latinoamérica y dar facilidad a nuestros clientes al hacer sus cambios de divisas.</p></li>
+                    
+                    <li><span class="check-icon"></span>Tasas competitivas.
+                    <p>Nuestras tasas se ajustan en base al precio del dolar en casas de cambios oficiales de cada pais, ofreciendo de esta manera tasas muy comodas a nuestros clientes.</p></li>
+                    <li><span class="check-icon"></span>Seguridad.
+                    <p>La app de Exchange Latam opera sin terceros, por ende brindamos la seguridad a nuestros usuarios al momento de cada transacción.</p></li>
+                    <li><span class="check-icon"></span>Horarios de atención 24/7.
+                    <p>El servicio de atención al cliente opera las 24 horas los 7 días de la semana, cualquier inconvenente o duda te atenderemos de inmediato.</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="dolar-price-ve">
+            <div class="left">
+                <h2>Dolar en Venezuela</h2>
+                <img class="grafica" src="./assets/img/dolar-ve.png"></img>
+                <p>Precio hoy: 7.900 VES</p>
+            </div>
+
+            <div class="right">
+                <h2>Dolar en Colombia</h2>
+                <img class="grafica" src="./assets/img/dolar-co.png"></img>
+                <p>Precio hoy: 4.492 COP</p>
+            </div>
+        </section>
+        <section class="simulator" id="simulator-section">
+            <h2>Simulador de Cambios</h2>
+            <form>
+                <div class="icon-top" >
+                        <img id="icon-top"  src="./assets/icons/envia.png" alt="Envía desde:">
+                </div>    
+            
+                <div class="select-top">
+                    <select onchange = "change_top(this.options[this.selectedIndex].value)"  class="selector-moneda-inicial" id="moneda-inicial">
+                        <option selected="true" disabled="disabled">Moneda Inicial</option>
+                        <optgroup label="Monedas Locales">
+                            <option value="./assets/icons/venezuela.png" data-valor="7.900">VES</option>
+                            <option value="./assets/icons/colombia.png" data-valor="4492">COP</option>
+                            <option value="./assets/icons/eeuu.png" data-valor="1">USD</option>
+                            <option value="./assets/icons/chile.png" data-valor="864.90">CLP</option>
+                            <option value="./assets/icons/peru.png" data-valor="3.88">PEN</option>
+                            <option value="./assets/icons/argentina.png" data-valor="140.16">ARS</option>
+                            <option value="./assets/icons/brasil.png" data-valor="5.17">BRL</option>
+                        </optgroup>
+                        <optgroup label="Cryptos">
+                            <option value="./assets/icons/bitcoin.png" data-valor="0.000050">BTC</option>
+                            <option value="./assets/icons/ethereum.png" data-valor="0.00063">ETH</option>
+                            <option value="./assets/icons/doge.png" data-valor="16.17">DOGE</option>
+                        </optgroup>
+                    </select>
+                    <input id="input-monto" class="input-monto" type="number" placeholder="Ingrese el monto">
+                </div>
+                <div class="icon-bottom" >
+                    <img id="icon-bottom" src="./assets/icons/recibe.png" alt="Envía desde:">
+                </div>  
+                <div class="select-bottom">
+                    <select onchange = "change_bottom(this.options[this.selectedIndex].value)"  class="selector-moneda-destino" id="moneda-destino">
+                        <option selected="true" disabled="disabled">Moneda Destino</option>
+                        <optgroup label="Monedas Locales">
+                            <option value="./assets/icons/venezuela.png" data-valor="7.900">VES</option>
+                            <option value="./assets/icons/colombia.png" data-valor="4492">COP</option>
+                            <option value="./assets/icons/eeuu.png" data-valor="1">USD</option>
+                            <option value="./assets/icons/chile.png" data-valor="864.90">CLP</option>
+                            <option value="./assets/icons/peru.png" data-valor="3.88">PEN</option>
+                            <option value="./assets/icons/argentina.png" data-valor="140.16">ARS</option>
+                            <option value="./assets/icons/brasil.png" data-valor="5.17">BRL</option>
+                        </optgroup>
+                        <optgroup label="Cryptos">
+                            <option value="./assets/icons/bitcoin.png" data-valor="0.000050">BTC</option>
+                            <option value="./assets/icons/ethereum.png" data-valor="0.00063">ETH</option>
+                            <option value="./assets/icons/doge.png" data-valor="16.17">DOGE</option>
+                        </optgroup>
+                    </select>
+                    <label id="monto-final" class="monto-final"></label>
+                </div>
+                <div class="button-simular-container">
+                    <button type="button" id="button-simular">Simular</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"> <span class="facebook-logo"></span> Facebook</a>
+                </li>
+                <li>
+                    <a href="#"><span class="instagram-logo"></span> Instagram</a>
+                </li> 
+                <li>
+                    <a href="#"><span class="twitter-logo"></span> Twiter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="https://img.icons8.com/nolan/64/exchange.png" alt="">
+        </div>
+        <div class="developer">
+            <p>Designed by:</p>
+            <a href="#"><span class="wgma99-logo"></span> wgma99</a>
+            <a href="#"><span class="linkedin-logo"></span> LinkedIn</a>
+        </div>
+    </footer>
+    <script src="./simulator.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.header-container .container-p img{
+    display: inline-block;
+    width: 150px;
+}
+
+.container-p{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.container-p p{
+    width: 300px;
+    margin: 0;
+}
+
+.prices-container p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.list-container ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.list-container ul li{
+    width: 300px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about-us .list-container p{
+    display: block;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #f4f4f4;
+}

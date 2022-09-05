@@ -1,0 +1,67 @@
+.title-logo{
+    justify-content: flex-start;
+    padding-left: 40px;
+    gap: 40px;
+}
+
+.container-p{
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+
+.container-p p{
+    padding-top: 0px;
+    width: 525px;
+}
+
+.container-p img{
+    position: absolute;
+    left: 550px;
+    top: -70px;
+}
+
+.header-container{
+    height: 200px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.buttom-simulator{
+    left: 80%;
+}
+
+.prices-container .tasas-img{
+    display: inline-block;
+}
+
+.prices-container .prices-title, .prices-container .tasas-img{
+ width: 150px;
+}
+
+.prices-container{
+    gap: 40px;
+}
+
+.list-container ul{
+    column-gap: 100px;
+}
+
+.select-top , .select-bottom{
+    justify-content: center;
+    gap: 50px;
+}
+
+.dolar-price-ve .right{
+    display: inline-block;
+}
+
+.dolar-price-ve{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.dolar-price-ve p{
+    width: 100%;
+}
